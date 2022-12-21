@@ -82,6 +82,7 @@ public class DefaultSqlSession implements SqlSession {
                         //准备参数,params
                         //获取被调用方法的返回值类型(如List<xxx>,和User类)
                         Type genericReturnType = method.getGenericReturnType();
+                        //todo 判断是什么类型标签
                         //判断是否进行了 泛型类型参数化(即是否使用泛型(比如List))
                         if (genericReturnType instanceof ParameterizedType) {
                             List<Object> objects = selectList(statementId, args);
