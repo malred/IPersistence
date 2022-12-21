@@ -37,7 +37,7 @@ public class Resources {
 
 </project>
 ```
-## 先打包(maven生命周期的install),才能被依赖
+## IPersistence_test模块 (IPersistence模块先打包(maven生命周期的install),才能被依赖)
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
