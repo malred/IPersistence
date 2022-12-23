@@ -1190,8 +1190,8 @@ public class proxyTest {
             System.out.println(u);
         }
     }
-    /* todo 可以在configuration类里加一个map,key是标签类型(如update),
-         value是方法的statementid,在代理invoke方法进行判断是什么类型的操作,然后执行相应方法*/
+    /* todo 可以在configuration类里加一个map,key是标签类型(如update),value是方法的statementid,在代理invoke方法进行判断是什么类型的操作,然后执行相应方法
+            并且把deleteOne/updateOne这些代码(有相同逻辑,都是queryother)->抽象成一个方法来操作*/
     /*
     @Test
     public void upd() {
